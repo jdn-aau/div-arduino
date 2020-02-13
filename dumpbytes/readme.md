@@ -3,6 +3,8 @@
 Just a simple library for dumping memory  in either binary, hex or ascii format
 
 
+You can just download dumpbytes.zip and install it - now virus inside :-)
+
 long x = 0x12345678;
 unsigned int xx = 0x0120;
 
