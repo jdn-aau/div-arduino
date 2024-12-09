@@ -12,7 +12,7 @@
    
    Jens Dalsgaard Nielsen, AAU, Aalborg, Denmark
    dec 2024
-   vrs 0.91
+   vrs 0.92
 */
 #include <fp64lib.h>
 
@@ -219,11 +219,12 @@ int chkAndDumpGGA(HardwareSerial &Serial,nmeaPkgTp *buf) {
   // no fix then stop  here
   if (0 == buf->fix) {
     Serial.println(" ");
-    return -3;
+    return -3;  // <<<=======
   }
 
   // from here we have a ok GGA pkg we assume
   buf->hdop = atof(hdopS);
+  buf->alt = atof(altS);
 
   // get sign for lat and lon
   if ('N' == latSgnS[0])
