@@ -10,6 +10,7 @@ Jens
 
 my copyright 
 
+```
 /***
    "THE BEER-WARE LICENSE" (frit efter PHK)
    <jdn@es.aau.dk/jensd@jensd.dk> wrote this file. 
@@ -27,6 +28,7 @@ my copyright
    10dec 2024
    vrs 17
 ***/
+```
 
 -----------------
 
