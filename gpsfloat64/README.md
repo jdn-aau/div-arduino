@@ -16,5 +16,7 @@ No guarantee what so ever
 
 JEns
 
+pls see my license in the code
+
 
 
