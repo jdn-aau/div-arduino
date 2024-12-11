@@ -1,4 +1,34 @@
-# A GPS module for NMEA handling
+# A small module for NMEA handling
+
+Targeted Arduino AVR family buth easily to port
+
+happy hacking   
+
+Jens
+
+-----------------
+
+my copyright 
+
+/***
+   "THE BEER-WARE LICENSE" (frit efter PHK)
+   <jdn@es.aau.dk/jensd@jensd.dk> wrote this file. 
+   As long as you retain this notice you can do whatever 
+   you want with this stuff. 
+   If we meet some day, and you think this stuff is worth it ...
+   you can buy me a beer in return :-)
+   or if you are real happy then ...
+   single malt will be well received :-)
+
+   Use it at your own risk - no warranty
+   
+   Jens Dalsgaard Nielsen, Aalborg, Denmark
+   
+   10dec 2024
+   vrs 17
+***/
+
+-----------------
 
 under construction  /Jens
 
@@ -17,8 +47,7 @@ under construction  /Jens
 No guarantee what so ever
 
 
-JEns
-
+ 
 pls see my license in the code
 
 
