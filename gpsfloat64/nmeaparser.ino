@@ -276,18 +276,7 @@ void doGLLvars(nmeaPkgTp *buf) {
 
   doLatLon(buf);
 }
-/*
-0 	Message ID $GPGLL
-1 	Latitude in dd mm,mmmm format (0-7 decimal places)
-2 	Direction of latitude N: North S: South
-3 	Longitude in ddd mm,mmmm format (0-7 decimal places)
-4 	Direction of longitude E: East W: West
-5 	UTC of position in hhmmss.ss format
-6 	Status indicator:
-  A: Data valid
-  V: Data not valid
-*/
-
+ 
 void doGGAvars(nmeaPkgTp *buf) {
   char *pg = buf->rx;
   pg = nextComma(pg);  // skip to after next comma
