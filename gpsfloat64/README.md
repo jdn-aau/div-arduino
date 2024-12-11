@@ -96,7 +96,7 @@ setup ()
 
   // Serial1.print(ENGLL);
   //Serial2.print(ENGLL);
-  //Serial2.print(ENVTG);  // TOT VTGnot impl only tarcked in parser
+  //Serial2.print(ENVTG);  //  VTG not impl only tracked in parser 
 
   //Serial1.print(ENVTG);
   //activateNmeaType(GLL);  // for GPL packets
@@ -115,6 +115,9 @@ setup ()
 - getNmeaPkg(Serial<ifacenr>,<buffer) returns 1 when a full correct pkg is received
 - dumpNmeaPkg convert the packet - read the nmea string(saved in rx2) and save lat,lon etc in rx2 as well
 - dumpNmeaPkg takes 4-10 msec
+
+
+
 ```
 void loop()
 {
@@ -127,6 +130,9 @@ void loop()
     if (getNmeaPkg(Serial1, &rx1))
     ...
  ```
+
+
+NO warranty whatsoever - tested stabel for +8 hours
 
 happy hacking
 
