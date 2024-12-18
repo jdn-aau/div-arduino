@@ -459,7 +459,7 @@ int extractDumpGGA(nmeaPkgTp *buf) {
     Serial.println();
     return -3;
   }
-
+   
   //dump pos
   Serial.print(fp64_to_string(buf->lat64, 17, 0));
   Serial.print(" ");
@@ -472,6 +472,7 @@ int extractDumpGGA(nmeaPkgTp *buf) {
   Serial.print(buf->nrSat);
 
   Serial.println(" ");
+  
   return 0;  // ok
 }
 
@@ -485,7 +486,7 @@ int extractDumpVTG(nmeaPkgTp *buf) {
   int sgn;
 
   //doGVTGvars(buf);
-  /*
+  /* TODO
   Serial.print(buf->ifaceID);
   Serial.print(" ");
   Serial.print(buf->fix);
@@ -587,7 +588,7 @@ void setup() {
   //Serial2.print(ENVTG);  // TOT VTGnot impl only tarcked in parser
   //Serial1.print(ENVTG);
 
-  activateNmeaType(GGA);
+  //activateNmeaType(GGA);
   //activateNmeaType(GLL);
   //  activateNmeaType(VTG);
   //activateNmeaType(GLL);
@@ -596,8 +597,8 @@ void setup() {
 
 //#define TIMETEST
 
-// unsigned startT;
-
+unsigned startT;
+unsigned int iii=0;
 // my little non preempt kernel
 void loop() {
   /*
@@ -605,7 +606,9 @@ void loop() {
     Serial.write((unsigned char)(Serial2.read()));
   }
   return;
-  */
+  
+
+ Serial.println(iii++);
   char status;
   if (getNmeaPkg(Serial2, &rx2)) {
     // startT = millis();
