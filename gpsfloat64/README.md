@@ -4,6 +4,12 @@ Targeted Arduino AVR family buth easily to port
 
 happy hacking   
 
+
+new: a litle more structured vrs ng13 but also a litle bit more complicated to use
+
+maybe more 2 come
+
+
 Jens
 
 -----------------
