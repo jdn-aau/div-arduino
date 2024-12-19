@@ -509,7 +509,9 @@ void clearPkg(nmeaPkgTp *buf) {
 }
 //-----------------------------------------------------------------
 
-Strings to holding received nmea message char b1[NMEAMAXLGT], b2[NMEAMAXLGT];
+//Strings to holding received nmea message 
+
+char b1[NMEAMAXLGT], b2[NMEAMAXLGT];
 
 void setup() {
 
@@ -692,3 +694,4 @@ System (Galileo)
   M:Manual Input mode
   S:Simulator mode N:Data not valid 10 The checksum data, always begins with *
 */
+
